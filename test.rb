@@ -1,8 +1,6 @@
 #require gems
 require 'require_all'
 
-#require dirver
-require '../Driver'
 
 #require pages
 require_all '../Pages/'
