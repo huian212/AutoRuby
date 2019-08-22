@@ -1,6 +1,9 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    assert (2.17.0)
+      much-factory (~> 0.1.0)
+      much-stub (~> 0.1.0)
     backports (3.15.0)
     builder (3.2.3)
     childprocess (1.0.1)
@@ -23,10 +26,13 @@ GEM
     cucumber-wire (0.0.1)
     diff-lcs (1.3)
     gherkin (5.1.0)
+    much-factory (0.1.0)
+    much-stub (0.1.1)
     multi_json (1.13.1)
     multi_test (0.1.2)
     rake (12.3.3)
     regexp_parser (1.6.0)
+    require_all (2.0.0)
     rubyzip (1.2.3)
     selenium-webdriver (3.142.3)
       childprocess (>= 0.5, < 2.0)
@@ -39,8 +45,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  assert
   cucumber
-  rake
+  require_all
   watir
 
 BUNDLED WITH

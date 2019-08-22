@@ -5,4 +5,7 @@ module BasePage
   def close
     $browser.close
   end
+  def title
+    $browser.title
+  end
 end

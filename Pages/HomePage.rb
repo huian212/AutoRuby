@@ -1,12 +1,12 @@
 module HomePage extend BasePage
-  URL = "www.baidu.com"
+  URL = "www.bing.com"
+
 
   def search_box
-    $browser.text_field(id: 'kw')
+    $browser.text_field(id: 'sb_form_q').wait_until(&:present?)
   end
 
   def submit_btn
-    $browser.button(id:'su')
+    $browser.div(id:'sb_go_par').wait_until(&:present?)
   end
-
 end
