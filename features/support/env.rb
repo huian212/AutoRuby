@@ -14,5 +14,22 @@ include BasePage
 include HomePage
 include SearchResultPage
 
+
+
+puts "you choose to run test with: "+ ENV["BROWSER"].to_s
+
 puts "starting browser..."
-$browser = Watir::Browser.new
+case ENV["BROWSER"].to_s.downcase
+when "chrome"
+  $browser = Watir::Browser.new :chrome
+when "chrome-headless"
+  $browser = Watir::Browser.new :chrome, headless: true
+when "safari"
+  $browser = Watir::Browser.new :safari
+when "firefox"
+  $browser = Watir::Browser.new :firefox, profile: 'default'
+when "IE"
+  $browser = Watir::Browser.new
+else
+  $browser = Watir::Browser.new
+end

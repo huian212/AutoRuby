@@ -9,6 +9,7 @@ end
 #Cucumber-Ruby does not support BeforeStep hooks.
 AfterStep do |scenario|
   puts "after step"
+  sleep 2
 end
 
 at_exit do
