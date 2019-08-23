@@ -1,4 +1,1 @@
-require 'rspec/expectations'
-include RSpec::Expectations
-
-expect(5).to eq(5)
+exec("cucumber features --tags '~@wip' --format html > report.html")
