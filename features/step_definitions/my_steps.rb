@@ -8,5 +8,5 @@ When(/^I search "([^"]*)"$/) do |keyword|
 end
 
 Then(/^I should be able to see "([^"]*)" in the top textbox in search result page$/) do |keyword|
-  assert_equal SearchResultPage.top_searchboxs.value, keyword
+  expect(SearchResultPage.top_searchboxs.value).to eq(keyword)
 end
