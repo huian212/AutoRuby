@@ -15,4 +15,3 @@ Cucumber::Rake::Task.new(:wip) do |t|
   t.cucumber_opts = "BROWSER=chorme"
   #exec("cucumber BROWSER="+browser+" features --tags 'not @wip' --format html > report.html")
 end
-taikoopenBrowser()
