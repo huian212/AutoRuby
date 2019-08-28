@@ -3,6 +3,8 @@ puts "require Gems..."
 require 'Watir'
 require 'cucumber'
 require 'require_all'
+require 'rake'
+require 'cucumber/rake/task'
 
 #require all Pages
 puts "require all Pages..."
